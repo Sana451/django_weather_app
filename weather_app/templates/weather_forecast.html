@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block header_text %}{{ city }}{% endblock %}
+
+{% block city_form %}{% endblock %}
+
+{% block extra_content %}
+
+    <table id="id_current_forecast_table" class="table">
+        <h2>Текущая погода</h2>
+        {% for key, value in current.items %}
+            <tr>
+                <td>{{ key }}: {{ value }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>В ближайшее время</h2>
+        {{ hourly|safe }}
+
+{% endblock %}
