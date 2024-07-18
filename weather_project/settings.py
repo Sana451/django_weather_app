@@ -7,7 +7,8 @@ DOTENV_PATH = os.path.join(BASE_DIR, ".env")
 if os.path.exists(DOTENV_PATH):
     load_dotenv(DOTENV_PATH)
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-jpy!(f9(bo=)l%fwioe0ca&#^w#c(fy98f-9(qv%+u!_9+*$+s'
 
 DEBUG = False
 
