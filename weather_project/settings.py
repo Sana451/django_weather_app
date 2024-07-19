@@ -10,7 +10,7 @@ if os.path.exists(DOTENV_PATH):
 # SECRET_KEY = os.environ.get('SECRET_KEY')
 SECRET_KEY = 'django-insecure-jpy!(f9(bo=)l%fwioe0ca&#^w#c(fy98f-9(qv%+u!_9+*$+s'
 
-DEBUG = False
+DEBUG = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',

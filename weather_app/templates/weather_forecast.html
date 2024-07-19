@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
 
 
-{% block header_text %}{{ city }}{% endblock %}
+{% block header_text %}
+    {{ city }}
+    <br>
+    <h5>
+        <a href="{% url 'city-request-count' city %}" style="color:white;">
+            количество просмотров прогноза погоды для этого города</a>
+    </h5>
 
-{% block city_form %}{% endblock %}
+{% endblock %}
 
 {% block extra_content %}
 
