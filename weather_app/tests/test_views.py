@@ -1,3 +1,4 @@
+import pytest
 from django.http import HttpResponse
 
 from django.test import Client
@@ -10,6 +11,7 @@ def test_home_page_returns_correct_html(client: Client):
     assertTemplateUsed(response, "home.html")
 
 
+@pytest.mark.django_db
 class TestForecastView:
     """Тест отображения прогноза погоды"""
 
